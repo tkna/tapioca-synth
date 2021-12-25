@@ -43,7 +43,7 @@ w = Window.new("Tapioca Synth", Rect(300, 300, 660, 260)).front;
 
 ~notes = List.newClear;
 
-// Main UserView 
+// Main UserView
 u1 = UserView(w, Rect(10, 10, 600, 150));
 u1.background = Color.white;
 u1.animate = true;
@@ -88,7 +88,7 @@ u1.drawFunc = {
 	};
 };
 
-u1.mouseDownAction = {|v,mouseX,mouseY,modifiers,buttonNumber,clickCount|
+u1.mouseDownAction = {|v,mouseX,mouseY,mod,buttonNumber,clickCount|
 	var y;
 	~notes.do( {|n,i|
 		y = n.amp.linlin(0, 1, 150, 50);
@@ -97,9 +97,11 @@ u1.mouseDownAction = {|v,mouseX,mouseY,modifiers,buttonNumber,clickCount|
 			relativeX = mouseX - n.x;
 			relativeY = mouseY - y;
 			if(n.selected == false) {
-				~notes.do( {|n,i|
-					~notes[i].selected = false;
-				});
+				if (mod.isCtrl != true) {
+					~notes.do( {|n,i|
+						~notes[i].selected = false;
+					});
+				};
 				if((n.state != "release") && (n.state != "finished")) {
 					~notes[clicked].selected = true;
 				};
@@ -139,7 +141,7 @@ u1.mouseMoveAction = {|v,mouseX,mouseY,mod|
 	};
 };
 
-u1.mouseUpAction = {|v,mouseX,mouseY,modifiers,buttonNumber,clickCount|
+u1.mouseUpAction = {|v,mouseX,mouseY,mod,buttonNumber,clickCount|
 	var y, group;
 
 	drag_to = mouseX @ mouseY;
@@ -147,7 +149,9 @@ u1.mouseUpAction = {|v,mouseX,mouseY,modifiers,buttonNumber,clickCount|
 		if(dragging) {
 			~notes.do( {|n,i|
 				y = n.amp.linlin(0, 1, 150, 50);
-				~notes[i].selected = false;
+				if (mod.isCtrl != true) {
+					~notes[i].selected = false;
+				};
 				if(Rect.fromPoints(drag_from, drag_to).contains(Rect(n.x-10, y-20, 21, 21))) {
 					if((n.state != "release") && (n.state != "finished")) {
 						~notes[i].selected = true;
