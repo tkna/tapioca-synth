@@ -42,6 +42,6 @@ By clicking icons at the right you can select the "1 note mode", where notes are
 Adjust the knobs at the bottom left to set attack time, decay time, sustain level, and release time.
 
 ### Groups(Colors): beta
-Notes can be grouped by colors. When creating a note/notes, the note(s) is grouped as the current color, which is currently selected in the bottom right area. You can change the color which a note belongs to by clicking the colored square in the bottom right area, with the target notes selected. You can also select notes with specific color all at once by clicking the colored square in the bottom right area, with no notes selected.
+Notes can be grouped by colors. When creating a note/notes, the note(s) is grouped as the current color, which is currently selected in the bottom right area. You can change the color which a note belongs to by clicking the colored square in the bottom right area, with the target note selected. You can also select notes with specific color all at once by clicking the colored square in the bottom right area, with no notes selected.
 
 
