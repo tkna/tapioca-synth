@@ -6,7 +6,7 @@ https://user-images.githubusercontent.com/69493688/147385243-c3e20858-ceaa-46b1-
 ## Get started
 1. Put class file `Tapioca.sc` into systemExtentionDir or userExtensionDir
 
-  can check them by executing following lines.
+  can be checked by executing following lines.
   ```
   Platform.systemExtensionDir.postln;
   Platform.userExtensionDir.postln;
