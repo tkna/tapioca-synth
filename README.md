@@ -3,6 +3,9 @@ A simple additive-synthesis synth with tapioca-like UI using SuperCollider
 
 https://user-images.githubusercontent.com/69493688/147385243-c3e20858-ceaa-46b1-b3cc-834f3768f4ed.mp4
 
+## Environment
+Tested on SuperCollider 3.10.2, Windows 10.
+
 ## Get started
 1. Put class file `Tapioca.sc` into systemExtentionDir or userExtensionDir
 
