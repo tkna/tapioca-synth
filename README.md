@@ -12,7 +12,7 @@ https://user-images.githubusercontent.com/69493688/147385243-c3e20858-ceaa-46b1-
   Platform.userExtensionDir.postln;
   ```
 
-2. Launch SuperCollider
+2. Launch SuperCollider and open `tapioca.scd`
 1. Execute the server(Synthdef) part
 1. Execute the client(GUI) part
 
