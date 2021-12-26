@@ -1,6 +1,8 @@
 # Tapioca Synth
 A simple additive-synthesis synth with tapioca-like UI using SuperCollider
 
+https://user-images.githubusercontent.com/69493688/147398394-2eb1945a-d066-495b-9829-fb86ed3e6a42.mp4
+
 
 ## Environment
 Tested on SuperCollider 3.10.2, Windows 10.
