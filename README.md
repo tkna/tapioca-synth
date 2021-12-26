@@ -7,7 +7,7 @@ https://user-images.githubusercontent.com/69493688/147398394-2eb1945a-d066-495b-
 ## Environment
 Tested on SuperCollider 3.10.2, Windows 10.
 
-## Get started
+## Getting started
 1. Put class file `Tapioca.sc` into systemExtentionDir or userExtensionDir
 
   can be checked by executing following lines.
